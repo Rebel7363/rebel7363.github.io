@@ -217,7 +217,7 @@ input[type=range]{accent-color:#22e6ff;width:180px;vertical-align:middle}
 </style></head><body>
 <div id="ld"><b id="lc">00</b><i id="lb"></i></div>
 <canvas id="stars"></canvas><div id="cur"></div><div id="gl"></div><div id="cd"></div><div id="ts" role="status"></div><button id="up" aria-label="Back to top">↑</button>
-<nav><a class="lg" href="#hero">Rajhansh Yadav<span>.</span></a><div><a href="#about">About</a><a href="#journey">Journey</a><a href="#work">Work</a><a href="#sk">Skills</a><a href="#contact">Contact</a><button class="kbd" id="ck" aria-label="Open command palette">Ctrl K</button><a class="rs" title="Add your resume link here" aria-disabled="true">Resume</a><a class="hire" href="#contact">Hire me</a></div></nav>
+<nav><a class="lg" href="#hero">Rajhansh Yadav<span>.</span></a><div><a href="#about">About</a><a href="#journey">Journey</a><a href="#work">Work</a><a href="#sk">Skills</a><a href="#contact">Contact</a><button class="kbd" id="ck" aria-label="Open command palette">Ctrl K</button><a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a><a class="hire" href="#contact">Hire me</a></div></nav>
 
 <section id="hero"><div class="hv"><video id="hv" muted playsinline preload="auto" poster="assets/poster.jpg" src="assets/hero-intro.mp4" aria-label="Cinematic intro: AI developer in a neon studio"></video><video id="hl" muted playsinline loop preload="auto" aria-hidden="true" src="assets/hero-loop.mp4"></video><div id="sw"></div><div class="vg"></div></div>
 <div class="ht"><span class="tag mono">Open to work</span><h1>RAJHANSH<em>YADAV.</em></h1><div class="role" id="role"></div>
@@ -229,7 +229,7 @@ input[type=range]{accent-color:#22e6ff;width:180px;vertical-align:middle}
 <section id="about"><div class="wrap"><div class="ab"><div>
 <span class="mono">About</span><h2>Building from <em>first principles.</em></h2>
 <p>Passionate about system internals, memory architectures, and end-to-end Machine Learning pipelines. Focused on clean code conventions, data efficiency, and building reliable AI applications from first principles.</p>
-<div class="edu"><b>Noida International University</b><br><span style="color:var(--mut)">School of Engineering & Technology</span><br><span class="tbf" data-ph>Bachelor of Computer Applications (AI/ML) · 2025–2028</span></div></div>
+<div class="edu"><b>Noida International University</b><br><span style="color:var(--mut)">School of Engineering & Technology</span><br><span style="color:var(--mut)">Bachelor of Computer Applications (AI/ML) · 2025–2028</span></div></div>
 <div class="pf"><div class="sh s1"></div><div class="sh s2"></div><div class="pc" role="img" aria-label="AI-generated avatar"></div><span class="fl" style="top:8%;left:-6%">Python 3.12</span><span class="fl" style="bottom:14%;right:-4%">Open source</span></div></div>
 <div class="st"><div><b data-n="65">0</b><span>Contributions on GitHub</span></div><div><b data-n="17">0</b><span>Automated tests written</span></div><div><b data-n="5">0</b><span>Public repos on GitHub</span></div><div><b>24/7</b><span>Continuous learning & build mode</span></div></div></div></section>
 
@@ -248,32 +248,18 @@ input[type=range]{accent-color:#22e6ff;width:180px;vertical-align:middle}
 <div><h3><small>Systems</small>Engineering</h3><div class="ch"><span>Data Structures & Algorithms</span><span>C</span><span>Java (OOP)</span><span>Operating Systems</span><span>Computer Architecture</span><span>Object-Oriented Design</span><span>Linux/Bash</span><span>Git/GitHub</span></div></div>
 <div><h3><small>Web</small>Tooling</h3><div class="ch"><span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>REST APIs</span><span>Vercel</span></div></div></div></div></div></section>
 
-<section id="oss"><div class="wrap"><span class="mono">Open source</span><h2>Code in <em>public.</em></h2>
-<div id="gh"><a class="ghc" href="https://github.com/Rebel7363" target="_blank" rel="noopener"><b>Loading GitHub repos…</b></a></div>
-<h3 class="h3" data-ph>Contributions to other projects</h3>
-<div class="pr" data-ph><div><span class="tbf">To be filled</span><h3>Merged pull request</h3><p>Link a PR merged in someone else's repo, plus one line on what you fixed.</p></div><div><span class="tbf">To be filled</span><h3>Issue you helped solve</h3><p>Link an issue or discussion where your answer helped.</p></div><div><span class="tbf">To be filled</span><h3>Your own open-source tool</h3><p>A small utility or library others can install and use.</p></div></div></div></section>
-
-<section id="notes" data-ph><div class="wrap"><span class="mono">Notes</span><h2>What I'm <em>learning.</em></h2><div class="pr">
-<div><span class="tbf">Note to be written</span><h3>Python internals: how memory really works</h3><p>Draft topic from the roadmap. Write it after the module, in your own words.</p></div>
-<div><span class="tbf">Note to be written</span><h3>Data structures, seen through the call stack</h3><p>Draft topic: what actually happens in memory during recursion.</p></div>
-<div><span class="tbf">Note to be written</span><h3>From NumPy arrays to PyTorch tensors</h3><p>Draft topic: what changes when the math moves to production ML.</p></div></div></div></section>
-
-<section id="lab"><div class="wrap"><span class="mono">Live ML lab · runs in your browser</span><h2>Watch a neural net <em>learn.</em></h2>
-<div class="lab"><div class="lc"><canvas id="ml" width="420" height="420" aria-label="Decision boundary of a small neural network"></canvas><div class="mono" id="mi"></div></div>
-<div class="lc"><canvas id="ls" width="420" height="180" aria-label="Training loss curve"></canvas><div class="btns" style="margin:0 0 14px"><button class="btn p" id="mt">Pause</button><button class="btn" id="mr">Reset</button><button class="btn" id="md">Dataset: blobs</button></div><p style="color:var(--mut);font-size:15px">A tiny 2→8→1 network trained with gradient descent, written in plain JavaScript with no libraries. Same idea as PyTorch, just small enough to watch: the left image is what the network believes, the right curve is its loss going down.</p></div></div></div></section>
-
 <section id="how"><div class="wrap"><span class="mono">Principles</span><h2>How I <em>build.</em></h2><div class="pr">
 <div><h3>Start from the internals</h3><p>Memory, call stacks and time complexity come first. If I can see what the machine is doing, the ML on top of it stops being magic.</p></div>
 <div><h3>Clean code is a feature</h3><p>Clear conventions and small, readable modules. Every commit in the roadmap is meant to be understood a month later.</p></div>
 <div><h3>Reliable AI, efficient data</h3><p>Pipelines that are cheap to run and easy to trust, built from first principles instead of copied recipes.</p></div></div></div></section>
 
-<section id="oss"><div class="wrap"><span class="mono">Open source & notes</span><h2>Giving back, <em>writing it down.</em></h2><div class="pr ph">
-<div><span class="tagp">TO BE FILLED</span><h3>Open-source contribution #1</h3><p>Repo name, what you fixed or added, and the pull-request link.</p></div>
-<div><span class="tagp">TO BE FILLED</span><h3>Open-source contribution #2</h3><p>Even a docs fix or a small bug fix counts. Add it here.</p></div>
-<div><span class="tagp">TO BE FILLED</span><h3>Note: how Python manages memory</h3><p>Turn a page from your journey-to-job notes into a short article.</p></div>
-<div><span class="tagp">TO BE FILLED</span><h3>Note: backprop from scratch</h3><p>Explain one ML idea in your own words, with a small code example.</p></div>
-<div><span class="tagp">TO BE FILLED</span><h3>Note: data structures I really used</h3><p>What you learned in semester 2 and where it showed up in a project.</p></div>
-<div><span class="tagp">TO BE FILLED</span><h3>Certificate or achievement</h3><p>Hackathon, course certificate or competition result goes here.</p></div></div></div></section>
+<section id="oss"><div class="wrap"><span class="mono">Open source & notes</span><h2>Giving back, <em>writing it down.</em></h2><div class="pr">
+<div><span class="tagp">OPEN SOURCE</span><h3>NeuralFlow-AI</h3><p>End-to-end ML pipeline for breast-tumor classification, served through a FastAPI + Docker service with CI.</p><a class="btn" href="https://github.com/Rebel7363/NeuralFlow-AI" target="_blank" rel="noopener" style="margin-top:14px;display:inline-block">GitHub →</a></div>
+<div><span class="tagp">OPEN SOURCE</span><h3>Scope Visualizer</h3><p>A Python execution tracer and time-complexity estimator, packaged as a self-contained HTML report generator.</p><a class="btn" href="https://github.com/Rebel7363/scope-visualizer" target="_blank" rel="noopener" style="margin-top:14px;display:inline-block">GitHub →</a></div>
+<div><span class="tagp">NOTE</span><h3>Python internals: how memory really works</h3><p>Building nn-from-scratch forced me to think about how NumPy arrays hold data in memory versus plain Python lists. Understanding this made vectorised operations click instead of feeling like magic speed-up.</p></div>
+<div><span class="tagp">NOTE</span><h3>Data structures, seen through the call stack</h3><p>Debugging recursive functions in my DSA practice made me trace the call stack by hand. It changed how I read tracebacks — now I see them as a map of function calls, not just red text to be scared of.</p></div>
+<div><span class="tagp">NOTE</span><h3>From NumPy arrays to PyTorch tensors</h3><p>Writing backpropagation by hand before touching PyTorch was intentional — I wanted to know what autograd actually automates before trusting it. Next: rebuilding the same network in PyTorch to compare.</p></div>
+<div><span class="tagp">CERTIFICATES</span><h3>Courses & certifications</h3><p>Python 101 for Data Science (IBM / Cognitive Class), Python (Kaggle), Generative AI Essentials & AI/Cybersecurity Awareness (TCS iON — "AI for All").</p></div></div></div></section>
 
 <section id="gh"><div class="wrap"><span class="mono">GitHub</span><h2>Latest from <em>my repos.</em></h2><div class="rg" id="gr">
 <a class="rp" href="https://github.com/Rebel7363/journey-to-job-ai-ml" target="_blank" rel="noopener"><h3>journey-to-job-ai-ml</h3><p>A disciplined roadmap through Python internals, data structures and production ML.</p><span class="mono">Python · public roadmap</span></a>
@@ -302,7 +288,7 @@ input[type=range]{accent-color:#22e6ff;width:180px;vertical-align:middle}
 <div id="cp" hidden><div class="cpb"><input id="cq" placeholder="Type a command…" aria-label="Command palette"><ul id="cl"></ul></div></div><div id="mo" hidden><div class="mob" role="dialog" aria-modal="true"><button id="mx" aria-label="Close">✕</button><div id="mc"></div></div></div>
 <script>
 const $=s=>document.querySelector(s),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
-const SHOW_PLACEHOLDERS=true; // set to false before you launch: hides every "to be filled" item
+const SHOW_PLACEHOLDERS=false; // set to false before you launch: hides every "to be filled" item
 if(!SHOW_PLACEHOLDERS)document.body.classList.add('clean');
 /* loader */
 let c=0;const ld=$('#ld'),iv=setInterval(()=>{c=Math.min(100,c+(rm?100:Math.ceil(Math.random()*9)));$('#lc').textContent=String(c).padStart(2,'0');$('#lb').style.width=c+'%';if(c>=100){clearInterval(iv);ld.style.opacity=0;setTimeout(()=>ld.remove(),600)}},50);
@@ -325,7 +311,7 @@ const P=[{t:'journey-to-job-ai-ml',d:'A disciplined engineering roadmap tracking
 {t:'NeuralFlow-AI',d:'End-to-end ML pipeline for breast-tumor classification: compares three models with cross-validation, tunes the decision threshold for medical recall, and serves predictions through a validated FastAPI + Docker service.',s:['scikit-learn','FastAPI','Pydantic','Docker','pytest'],b:'Live repo',g:'linear-gradient(135deg,#5b21b6,#db2777)',l:'https://github.com/Rebel7363/NeuralFlow-AI',k:'NF'},
 {t:'Scope Visualizer',d:'See what Python code does while it runs: traces every function call (time, memory, depth) and estimates time complexity, all from one HTML report.',s:['Python','pytest','GitHub Actions'],b:'Live repo',g:'linear-gradient(135deg,#0f766e,#22e6ff)',l:'https://github.com/Rebel7363/scope-visualizer',k:'SV'},{t:'Neural Network From Scratch',d:'A neural network built with only NumPy: backpropagation, Adam optimizer, verified with a numerical gradient check. Classifies handwritten digits.',s:['Python','NumPy','scikit-learn','pytest'],b:'Live repo',g:'linear-gradient(135deg,#4c1d95,#0e7490)',l:'https://github.com/Rebel7363/nn-from-scratch',k:'NN'},{t:'Project #5',d:'Something to be here: your next build goes in this card.',s:['Tech','Stack'],b:'Coming soon',g:'repeating-linear-gradient(-45deg,#111528 0 10px,#0b0d1a 10px 20px)',k:'+',ph:true}].filter(p=>SHOW_PLACEHOLDERS||!p.ph);
 const cf=$('#cf'),wk=$('#work'),sk=$('#sk'),up=$('#up');wk.style.height=(60+P.length*90)+'vh';
-P.push({t:'Project to be filled',d:'Your next project goes here: what it does, the stack you used and a live link.',s:['Stack','Tools','Link'],b:'Coming soon',g:'linear-gradient(135deg,#1e293b,#475569)',k:'+'},{t:'Another project to be filled',d:'Add a second project: idea, tech stack, GitHub link and one result with a number.',s:['Python','ML','Web'],b:'Coming soon',g:'linear-gradient(135deg,#312e81,#0e7490)',k:'+'});wk.style.height=(P.length*85+90)+'vh';cf.innerHTML=P.map((p,i)=>`<article class="cd${p.ph?' ph':''}"${p.ph?' data-ph':''}><div class="art" style="background:${p.g}">${p.k}</div><span class="bd">${p.b}</span><h3>${p.t}</h3><p>${p.d}</p><div class="ch">${p.s.map(x=>`<span>${x}</span>`).join('')}</div><div class="btns">${p.l?`<a class="btn p" href="${p.l}" target="_blank" rel="noopener">GitHub →</a>`:`<span class="btn" aria-disabled="true">Link coming soon</span>`}<button class="btn" data-cs="${i}">Case study</button></div></article>`).join('');
+wk.style.height=(P.length*85+90)+'vh';cf.innerHTML=P.map((p,i)=>`<article class="cd${p.ph?' ph':''}"${p.ph?' data-ph':''}><div class="art" style="background:${p.g}">${p.k}</div><span class="bd">${p.b}</span><h3>${p.t}</h3><p>${p.d}</p><div class="ch">${p.s.map(x=>`<span>${x}</span>`).join('')}</div><div class="btns">${p.l?`<a class="btn p" href="${p.l}" target="_blank" rel="noopener">GitHub →</a>`:`<span class="btn" aria-disabled="true">Link coming soon</span>`}<button class="btn" data-cs="${i}">Case study</button></div></article>`).join('');
 const cds=[...cf.children];$('#dots').innerHTML=P.map(()=>'<i></i>').join('');const dots=[...$('#dots').children];
 function place(pos){cds.forEach((el,i)=>{const d=i-pos,a=Math.abs(d),cl=Math.max(-1.3,Math.min(1.3,d));el.style.transform=`translateX(${d*62}%) translateZ(${-a*140}px) rotateY(${-cl*32}deg) scale(${1-a*.06})`;el.style.opacity=Math.max(0,1-a*.5);el.style.zIndex=9-Math.round(a);el.style.pointerEvents=a<1.6?'auto':'none'});const n=Math.round(pos);$('#cn').textContent=`0${n+1} / 0${P.length}`;dots.forEach((d,i)=>d.classList.toggle('on',i===n))}
 /* smooth scroll + jump + glitch */
@@ -350,7 +336,7 @@ const J=[{n:'Sem 1',t:'Semester 1 · Foundations',d:'Where the base got laid: C,
 {n:'Sem 2',t:'Semester 2 · Core CS',d:'The subjects behind system internals: memory, processes and data structures.',c:['Data Structures (+ lab)','Operating Systems (+ lab)','OOP with Java (+ lab)','Web Technologies (+ lab)','Mathematics Foundations for CS II']},
 {n:'Roadmap',t:'journey-to-job-ai-ml',d:'A public roadmap tracking Python internals, data structures and production ML, with 100+ commits and modules logged.',c:['Python 3.12','PyTorch','Hugging Face','Git/GitHub']},
 {n:'NeuralFlow',t:'NeuralFlow-AI',d:'Live: compares three models with cross-validation, tunes the decision threshold for medical recall, and serves it through a tested FastAPI + Docker service.',c:['scikit-learn','FastAPI','Docker','pytest','GitHub Actions']},
-{n:'Next',t:'Your next milestone',d:'Placeholder: add an internship, hackathon, paper or release here.',c:['Add yours']}];
+{n:'Next',t:'Applying for internships',d:'Three shipped projects — NeuralFlow-AI, Scope Visualizer, and a neural net built from scratch — plus a public learning roadmap. Next step: landing an AI/ML internship.',c:['AI/ML Internship','Open to work']}];
 $('#tl').innerHTML='<i id="tf"></i>'+J.map((j,k)=>`<button class="tn" aria-label="${j.t}"><b>${k+1}</b>${j.n}</button>`).join('');
 const tns=[...document.querySelectorAll('.tn')];let ji=0,auto;
 function show(k){ji=k;tns.forEach((b,i)=>{b.classList.toggle('on',i===k);b.classList.toggle('dn',i<k)});$('#tf').style.width=k/(J.length-1)*80+'%';const j=J[k];$('#jd').innerHTML=`<h3>${j.t}</h3><p>${j.d}</p><div class="ch">${j.c.map(x=>`<span>${x}</span>`).join('')}</div>`}
@@ -438,29 +424,8 @@ const all=()=>{mk($('#pgd').value);init();run=false;$('#pgt').textContent='Train
 $('#pgt').onclick=()=>{run=!run;$('#pgt').textContent=run?'Pause':'Train'};$('#pgr').onclick=all;$('#pgd').onchange=all;
 new IntersectionObserver(e=>{lv=e[0].isIntersecting},{threshold:.2}).observe($('#lab'));all();
 (function lp(){if(run&&lv){let L=0;for(let k=0;k<5;k++)L=step(+$('#pglr').value);ep+=5;loss.push(L);if(loss.length>300)loss.shift();draw()}requestAnimationFrame(lp)})()})();
-/* live GitHub repos (works once the site runs on your own domain) */
-(async()=>{const box=$('#gh');try{const r=await fetch('https://api.github.com/users/Rebel7363/repos?sort=updated&per_page=12');if(!r.ok)throw 0;const L=(await r.json()).filter(x=>!x.fork).slice(0,6);if(!L.length)throw 0;box.textContent='';
- L.forEach(x=>{const a=document.createElement('a'),t=document.createElement('b'),d=document.createElement('p'),m=document.createElement('span');a.className='ghc';a.href=x.html_url;a.target='_blank';a.rel='noopener';t.textContent=x.name;d.textContent=x.description||'No description yet.';m.className='mono';m.textContent=[x.language,'★ '+x.stargazers_count,'updated '+new Date(x.pushed_at).toLocaleDateString('en-GB',{month:'short',year:'numeric'})].filter(Boolean).join(' · ');a.append(t,d,m);box.append(a)})}
-catch(e){box.innerHTML='<a class="ghc" href="https://github.com/Rebel7363" target="_blank" rel="noopener"><b>See all repositories on GitHub →</b><p>Live repo cards appear here automatically once this site runs on your own domain.</p></a>'}})();
-
-/* placeholders, ML lab, GitHub */
+/* placeholders, GitHub */
 const PH={p:'Add the problem this project solves, in one or two lines.',a:'Add how you built it: architecture, models, tools.',r:'Add the result with a number (accuracy, latency, users).'};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const mc=$('#ml'),mctx=mc.getContext('2d'),lcv=$('#ls'),lctx=lcv.getContext('2d'),HN=8,dn=['blobs','circles','xor'];
-let ds=0,DD=[],w1,b1,w2,b2,loss=[],run=0,ep=0;const rnd=()=>Math.random()*2-1,gs2=()=>(Math.random()+Math.random()+Math.random()-1.5)/1.5,sig=z=>1/(1+Math.exp(-z));
-function mlMk(){DD=[];for(let i=0;i<80;i++){let x,y,l=i%2;if(ds===0){x=(l?.5:-.5)+gs2()*.28;y=(l?.5:-.5)+gs2()*.28}else if(ds===1){const a=Math.random()*6.28,r=l?.35:.85;x=Math.cos(a)*r+gs2()*.06;y=Math.sin(a)*r+gs2()*.06}else{x=rnd();y=rnd();l=x*y>0?1:0}DD.push([x,y,l])}}
-function mlInit(){w1=Array.from({length:HN},()=>[rnd(),rnd()]);b1=Array(HN).fill(0);w2=Array.from({length:HN},rnd);b2=0;loss=[];ep=0}
-function mlFwd(x,y){const h=w1.map((w,j)=>Math.tanh(w[0]*x+w[1]*y+b1[j]));return[h,sig(h.reduce((s,v,j)=>s+v*w2[j],b2))]}
-function mlStep(){const lr=.5,n=DD.length,g1=w1.map(()=>[0,0]),gb=Array(HN).fill(0),g2=Array(HN).fill(0);let L=0,gb2=0;
- for(const[x,y,t]of DD){const[h,p]=mlFwd(x,y);L-=t*Math.log(p+1e-9)+(1-t)*Math.log(1-p+1e-9);const d=p-t;gb2+=d;for(let j=0;j<HN;j++){g2[j]+=d*h[j];const dh=d*w2[j]*(1-h[j]*h[j]);g1[j][0]+=dh*x;g1[j][1]+=dh*y;gb[j]+=dh}}
- for(let j=0;j<HN;j++){w2[j]-=lr*g2[j]/n;w1[j][0]-=lr*g1[j][0]/n;w1[j][1]-=lr*g1[j][1]/n;b1[j]-=lr*gb[j]/n}b2-=lr*gb2/n;loss.push(L/n);ep++}
-function mlDraw(){const S=420,g=42,c=S/g;for(let i=0;i<g;i++)for(let j=0;j<g;j++){const p=mlFwd((i+.5)/g*2.4-1.2,(j+.5)/g*2.4-1.2)[1];mctx.fillStyle=`rgba(${34+105*p|0},${230-138*p|0},${255-9*p|0},.3)`;mctx.fillRect(i*c,j*c,c+1,c+1)}
- for(const[x,y,l]of DD){mctx.beginPath();mctx.arc((x+1.2)/2.4*S,(y+1.2)/2.4*S,5,0,6.3);mctx.fillStyle=l?'#a78bfa':'#22e6ff';mctx.fill();mctx.strokeStyle='#05060d';mctx.stroke()}
- lctx.clearRect(0,0,420,180);lctx.strokeStyle='#22e6ff';lctx.lineWidth=2;lctx.beginPath();loss.slice(-220).forEach((v,i,a)=>{const X=i/Math.max(1,a.length-1)*420,Y=170-Math.min(v,.8)/.8*160;i?lctx.lineTo(X,Y):lctx.moveTo(X,Y)});lctx.stroke();
- $('#mi').textContent=`epoch ${ep} · loss ${loss.length?loss[loss.length-1].toFixed(3):'-'}`}
-mlMk();mlInit();mlDraw();
-let labVis=false;new IntersectionObserver(e=>{labVis=e[0].isIntersecting;if(labVis&&!rm&&!ep)run=1;$('#mt').textContent=run?'Pause':'Train'},{threshold:.3}).observe($('#lab'));
-$('#mt').onclick=()=>{run=!run;$('#mt').textContent=run?'Pause':'Train'};$('#mr').onclick=()=>{mlInit();mlDraw()};$('#md').onclick=()=>{ds=(ds+1)%3;$('#md').textContent='Dataset: '+dn[ds];mlMk();mlInit();mlDraw()};
-(function ml(){if(run&&labVis&&ep<4000){for(let k=0;k<5;k++)mlStep();mlDraw()}requestAnimationFrame(ml)})();
 (async()=>{try{const r=await fetch('https://api.github.com/users/Rebel7363/repos?sort=updated&per_page=9');if(!r.ok)return;const a=(await r.json()).filter(x=>!x.fork).slice(0,6);if(!a.length)return;$('#gr').innerHTML=a.map(x=>`<a class="rp" href="${esc(x.html_url)}" target="_blank" rel="noopener"><h3>${esc(x.name)}</h3><p>${esc(x.description||'Add a one-line description on GitHub.')}</p><span class="mono">${esc(x.language||'-')} · ★ ${+x.stargazers_count} · updated ${new Date(x.pushed_at).toLocaleDateString()}</span></a>`).join('')}catch(e){}})();
 </script></body></html>
