@@ -365,12 +365,20 @@ new IntersectionObserver(e=>{vis=e[0].isIntersecting}).observe(sk);addEventListe
  if(scrollY!==ly||Math.abs(wt-wp)>.002){ly=scrollY;wt=pg(wk)*(P.length-1);wp+=(wt-wp)*.12;place(wp);up.classList.toggle('s',ly>700);const k=Math.min(3,Math.floor(pg(sk)*4));if(k!==wi){wi=k;morph();gs.forEach((g,i)=>g.classList.toggle('on',i===k))}}
  if(vis){const r=pc.getBoundingClientRect();px.clearRect(0,0,pc.width,pc.height);px.fillStyle=words[wi][1];PT.forEach(p=>{p.x+=(p.tx-p.x)*.06;p.y+=(p.ty-p.y)*.06;const dx=p.x-(mo.x-r.left),dy=p.y-(mo.y-r.top),d=Math.hypot(dx,dy);if(d<90&&d>0){p.x+=dx/d*(90-d)*.35;p.y+=dy/d*(90-d)*.35}px.fillRect(p.x,p.y,2.2,2.2)});if(wi===1){px.strokeStyle='rgba(139,92,246,.38)';px.beginPath();for(let i=0;i<110;i++){const a=PT[i];for(let j=i+1;j<110;j++){const b=PT[j],dx=a.x-b.x,dy=a.y-b.y;if(dx*dx+dy*dy<4900){px.moveTo(a.x,a.y);px.lineTo(b.x,b.y)}}}px.stroke()}}
  requestAnimationFrame(tk)})();
-/* contact -> mailto */
-$('#send').onclick=()=>{if(!$('#fn').value||!$('#fe').value||!$('#fm').value){$('#fst').textContent='Fill in name, email and message.';return}
-const s=$('#fs').value||'Portfolio enquiry',b=`Hi Rajhansh,\n\n${$('#fm').value}\n\n— ${$('#fn').value} (${$('#fe').value})`;
-if(fr){cp(`To: rajy28555@gmail.com\nSubject: ${s}\n\n${b}`);$('#fst').textContent='Preview blocks mail apps, so your message is copied. Paste it into an email.';toast('Message copied')}
-else{$('#fst').textContent='Opening your mail app…';location.href=`mailto:rajy28555@gmail.com?subject=${encodeURIComponent(s)}&body=${encodeURIComponent(b)}`}};
-
+ 
+/* contact -> Formspree */
+$('#send').onclick=async()=>{
+ const n=$('#fn').value.trim(),e=$('#fe').value.trim(),m=$('#fm').value.trim();
+ if(!n||!e||!m){$('#fst').textContent='Fill in name, email and message.';return}
+ const btn=$('#send');btn.disabled=true;$('#fst').textContent='Sending…';
+ try{
+  const r=await fetch('https://formspree.io/f/xjyyygke',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:n,email:e,subject:$('#fs').value||'Portfolio enquiry',message:m})});
+  if(!r.ok)throw 0;
+  $('#fst').textContent='Message sent. I will reply soon.';
+  ['#fn','#fe','#fs','#fm'].forEach(i=>$(i).value='');
+ }catch(x){$('#fst').textContent='Could not send. Please email rajy28555@gmail.com directly.'}
+ btn.disabled=false};
+ 
 /* hero video */
 document.querySelectorAll('video[data-src]').forEach(v=>{v.src=(innerWidth<820||(navigator.connection&&navigator.connection.saveData))?v.dataset.src.replace('.mp4','-720.mp4'):v.dataset.src});
 const hv=$('#hv'),hl=$('#hl'),hr0=$('#hero'),hvw=$('.hv'),showT=()=>hr0.classList.add('in');
